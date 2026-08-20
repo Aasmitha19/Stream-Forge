@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import { useCallback } from "react";
 import {
   ReactFlow,
@@ -78,6 +79,31 @@ const initialEdges = [
 ];
 
 function App() {
+  const [metrics, setMetrics] = useState({
+  truck_id: "TRUCK-001",
+  speed: 65,
+  temperature: 72,
+  engine_status: "Running",
+});
+
+useEffect(() => {
+  const fetchMetrics = async () => {
+    try {
+      const response = await fetch("http://127.0.0.1:8000/metrics");
+      const data = await response.json();
+
+      setMetrics(data);
+    } catch (error) {
+      console.error("API connection error:", error);
+    }
+  };
+
+  fetchMetrics();
+
+  const interval = setInterval(fetchMetrics, 2000);
+
+  return () => clearInterval(interval);
+}, []);
   const [nodes, , onNodesChange] = useNodesState(initialNodes);
   const [edges, setEdges, onEdgesChange] =
     useEdgesState(initialEdges);
