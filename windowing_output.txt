@@ -1,0 +1,36 @@
+
+=============================================
+     STREAM FORGE - WINDOWING
+=============================================
+
+Truck ID            : TRUCK-001
+Window Start        : 2026-08-20T10:00:00
+Window End          : 2026-08-20T10:05:00
+Average Temperature : 26.50 ░C
+Event Count         : 4
+----------------------------------------
+Truck ID            : TRUCK-001
+Window Start        : 2026-08-20T10:05:00
+Window End          : 2026-08-20T10:10:00
+Average Temperature : 30.00 ░C
+Event Count         : 1
+----------------------------------------
+Truck ID            : TRUCK-002
+Window Start        : 2026-08-20T10:00:00
+Window End          : 2026-08-20T10:05:00
+Average Temperature : 32.00 ░C
+Event Count         : 2
+----------------------------------------
+
+Windowing test completed.
+
+=============================================
+     LATE-ARRIVING DATA TEST
+=============================================
+
+Late Event:
+Truck ID     : TRUCK-001
+Temperature  : 28 ░C
+Event Time   : 2026-08-20T10:03:30
+
+Late event belongs to:
