@@ -1,0 +1,131 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0f172a;
+}
+
+.dashboard {
+  width: 100vw;
+  height: 100vh;
+  background: #0f172a;
+  color: white;
+  overflow: auto;
+}
+
+.header {
+  padding: 15px 30px;
+  background: #111827;
+  border-bottom: 1px solid #334155;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 26px;
+}
+
+.header p {
+  margin: 5px 0 0;
+  color: #94a3b8;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  padding: 15px 30px;
+}
+
+.metric-card {
+  background: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 10px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.metric-card span {
+  color: #94a3b8;
+  font-size: 14px;
+}
+
+.metric-card strong {
+  color: white;
+  font-size: 20px;
+}
+
+.charts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  padding: 0 30px 15px;
+}
+
+.chart-card {
+  background: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.chart-card h2 {
+  margin-top: 0;
+  font-size: 18px;
+}
+
+.topology {
+  height: 500px;
+  margin: 0 30px 30px;
+  border: 1px solid #334155;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.worker-section {
+  margin: 0 30px 15px;
+  background: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.worker-section h2 {
+  margin: 0 0 15px;
+  font-size: 20px;
+}
+
+.workers {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.worker-card {
+  background: #0f172a;
+  border: 1px solid #334155;
+  border-radius: 8px;
+  padding: 15px;
+}
+
+.worker-title {
+  font-size: 17px;
+  margin-bottom: 10px;
+}
+
+.worker-card strong {
+  font-size: 18px;
+}
+
+.worker-card p {
+  color: #94a3b8;
+  margin-bottom: 0;
+}
+
+.status-dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background: #22c55e;
+  border-radius: 50%;
+  margin-right: 8px;
+}
